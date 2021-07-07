@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "./Navigation";
+import Navigation from "./NavigationComponent";
 import Hero from "./HeroComponent";
 import Intro from "./IntroComponent";
 import Footer from "./footerComponent";

@@ -15,10 +15,10 @@ const Navigation = (props) => {
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto">
-              <Link to="/loginpage" className="btn btn-info text-dark">
+              <Link to="/" className="btn btn-info text-dark">
                 Log in
               </Link>{" "}
-              <Link to="/signuppage" className="btn btn-warning text-dark">
+              <Link to="/" className="btn btn-warning text-dark">
                 Sign Up
               </Link>{" "}
             </Nav>
