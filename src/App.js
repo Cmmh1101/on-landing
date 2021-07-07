@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-import { Navbar, NavbarBrand } from "reactstrap";
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import Main from "./components/MainComponent";
+import Dashboard from "./components/MainComponent";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Navbar dark color="secondary">
-          <div className="container">
-            <NavbarBrand href="/">React Starter template</NavbarBrand>
-          </div>
-        </Navbar>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Main />
+        </div>
+      </BrowserRouter>
     );
   }
 }

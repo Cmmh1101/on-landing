@@ -1,0 +1,34 @@
+.sidebar {
+  width: 300px;
+
+  height: 100vh;
+  background: linear-gradient(
+    144.45deg,
+    #42c2f9 27.83%,
+    #5aa7f1 64.58%,
+    #649bed 79.26%
+  ) !important;
+  font-size: 1rem;
+}
+
+/* group img */
+
+.group-photo img {
+  width: 100%;
+  border: 5px solid var(--secondaryColor);
+}
+
+/* navigation */
+.badges {
+  background-color: var(--primaryColor) !important;
+}
+/* secondary nav */
+
+ul {
+  list-style: none;
+}
+
+.links {
+  text-decoration: none;
+  color: #fff;
+}
