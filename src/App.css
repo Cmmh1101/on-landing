@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+:root {
+  --primaryColor: #42c2f9;
+  --secondaryColor: #f1c179;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+q {
+  font-family: "Poppins", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.landing-hero {
+  margin: 0;
+  background: linear-gradient(
+    144.45deg,
+    #42c2f9 27.83%,
+    #5aa7f1 64.58%,
+    #649bed 79.26%
+  ) !important;
+  border-radius: 0 !important;
 }
 
-.App-link {
-  color: #61dafb;
+.landing-hero h1 {
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.orange-span {
+  color: #f1c179;
+}
+
+.intro-image {
+  width: 100%;
+}
+
+.intro-image img {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #42c2f9;
+}
+/* Social icons */
+
+footer .social-icons a i {
+  color: #fff;
+  font-size: 2rem;
+  margin: 20px;
+  color: #42c2f9;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .social-icons a i:hover {
+  color: #f1c179;
+  transform: scale(1.1);
 }

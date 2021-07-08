@@ -1,6 +1,17 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav } from "reactstrap";
+import { Link, NavLink } from "react-router-dom";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  DropdownItem,
+  UncontrolledDropdown,
+  DropdownMenu,
+  DropdownToggle,
+} from "reactstrap";
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,11 +25,46 @@ const Navigation = (props) => {
           <NavbarBrand href="/">OurNet</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
-            <Nav className="ml-auto">
-              <Link to="/" className="btn btn-info text-dark">
+            <Nav className="mr-auto" navbar>
+              <NavItem>
+                <NavLink className="nav-link" to="/">
+                  Home
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/features" className="nav-link">
+                  Features
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/about" className="nav-link">
+                  About
+                </NavLink>
+              </NavItem>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                  Support
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                    <NavLink
+                      className="nav-link text-primary"
+                      to="/frequentquestions"
+                    >
+                      Frequent Questions
+                    </NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NavLink className="nav-link text-primary" to="/contactus">
+                      Contact
+                    </NavLink>
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+              <Link to="/" className="btn btn-info text-dark ">
                 Log in
               </Link>{" "}
-              <Link to="/" className="btn btn-warning text-dark">
+              <Link to="/" className="btn btn-warning text-dark ">
                 Sign Up
               </Link>{" "}
             </Nav>
